@@ -1,3 +1,10 @@
+:root{
+    --mainbackground: #22223B;
+    --secbackground: #4A4E69;
+    --thirdbackground: #9A8C98;
+    --textcolor: #C9ADA7;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +20,7 @@ body{
 header{
     width: 100%;
     height: 250px;
-    background: #22223B;
+    background: var(--mainbackground);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,7 +59,7 @@ header img:hover{
 }
 .introductie-container{
     width: 1200px;
-    background-color: #4A4E69;
+    background-color: var(--secbackground);
     border: 5px solid black;
     border-radius: 35px;
     padding: 1rem;
@@ -63,5 +70,93 @@ header img:hover{
     font-weight: bold;
     margin: 1rem;
     color: #C9ADA7;
-    -webkit-text-stroke: 1px #22223B;
+    -webkit-text-stroke: 1px var(--mainbackground);
+}
+
+.Talen-tabel{
+    width: 750px;
+    background: var(--secbackground);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 5px solid black;
+}
+.Talen-tabel-cointainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.Talen-tabel thead th{
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 1.5rem;
+}
+.Talen-tabel tbody tr{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 12px;
+    padding: 14px 16px;
+}
+.Talen-tabel tbody tr:nth-child(odd){
+    background: var(--mainbackground);
+}
+.Talen-tabel tbody tr:nth-child(even){
+    background: var(--secbackground);
+}
+.Talen-tabel td{
+    border: none;
+}
+.Talen-rij{
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+.Talen-flag{
+    width: 36px;
+    height: 24px;
+    border-radius: 4px;
+    background: var(--textcolor);
+}
+.Talen-naam{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--textcolor);
+    -webkit-text-stroke: 1px var(--mainbackground);
+}
+.Taal-kennis{
+    font-size: 1rem;
+    color: black;
+}
+.Kennis-progressie{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.progressie{
+    height: 10px;
+    background: #e6eefb;
+    border-radius: 999px;
+    overflow: hidden;
+}
+.progressie span{
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, deepskyblue, darkblue);
+    border-radius: 999px;
+}
+.progressie-label{
+    font-size: 1rem;
+    color: black;
+}
+.prog-ned{
+    width: 100%;
+}
+.prog-eng{
+    width: 80%;
 }

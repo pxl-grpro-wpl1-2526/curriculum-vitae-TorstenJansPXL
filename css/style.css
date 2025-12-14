@@ -1,8 +1,7 @@
 :root{
     --mainbackground: #22223B;
-    --secbackground: #4A4E69;
+    --secondbackground: #4A4E69;
     --thirdbackground: #9A8C98;
-    --textcolor: #C9ADA7;
 }
 
 *{
@@ -59,7 +58,7 @@ header img:hover{
 }
 .introductie-container{
     width: 1200px;
-    background-color: var(--secbackground);
+    background-color: var(--secondbackground);
     border: 5px solid black;
     border-radius: 35px;
     padding: 1rem;
@@ -69,13 +68,12 @@ header img:hover{
     font-size: 1.5rem;
     font-weight: bold;
     margin: 1rem;
-    color: #C9ADA7;
-    -webkit-text-stroke: 1px var(--mainbackground);
+    color: aliceblue;
 }
 
 .Talen-tabel{
     width: 750px;
-    background: var(--secbackground);
+    background: var(--secondbackground);
     border-radius: 10px;
     overflow: hidden;
     border: 5px solid black;
@@ -107,7 +105,7 @@ header img:hover{
     background: var(--mainbackground);
 }
 .Talen-tabel tbody tr:nth-child(even){
-    background: var(--secbackground);
+    background: var(--secondbackground);
 }
 .Talen-tabel td{
     border: none;
@@ -121,13 +119,12 @@ header img:hover{
     width: 36px;
     height: 24px;
     border-radius: 4px;
-    background: var(--textcolor);
+    background: white;
 }
 .Talen-naam{
     font-weight: 600;
     font-size: 1.5rem;
-    color: var(--textcolor);
-    -webkit-text-stroke: 1px var(--mainbackground);
+    color: aliceblue;
 }
 .Taal-kennis{
     font-size: 1rem;
@@ -161,7 +158,51 @@ header img:hover{
     width: 80%;
 }
 
-
+.werkervaring{
+    width: 1200px;
+    margin: 0 auto;
+}
+.werkervaring h2{
+    margin-bottom: 24px;
+    border-bottom: 2px solid black;
+    padding-bottom: 8px;
+}
+.werkervaring-container{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+.ervaring{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    background: var(--secondbackground);
+    border-radius: 10px;
+    border: 5px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px black;
+    color: aliceblue;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.functie{
+    margin: 0;
+    font-size: 1.1rem;
+}
+.periode{
+    font-size: 0.9rem;
+}
+.bedrijf{
+    font-weight: bold;
+}
+.beschrijving{
+    line-height: 1.5;
+}
 
 footer{
     position: fixed;
@@ -182,15 +223,14 @@ footer{
     gap: 12px;
 }
 footer p{
-    color: white;
-    -webkit-text-stroke: 0.3px black;
+    color: aliceblue;
     font-size: 1.25rem;
 }
 footer button{
     border: solid 3px black;
     border-radius: 15px;
-    color: var(--textcolor);
-    background: var(--secbackground);
+    color: aliceblue;
+    background: var(--secondbackground);
     font-size: 1.5rem;
     width: 200px;
     height: 50px;
@@ -199,3 +239,4 @@ footer button:hover{
     cursor: pointer;
     box-shadow: 10px 10px 20px black;
 }
+

@@ -17,40 +17,38 @@ body{
     padding-bottom: 75px;
     margin: 0;
 }
-
-header{
+header {
     width: 100%;
     height: 250px;
     background: var(--mainbackground);
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
-.header-container{
-    width: 1200px;
+.header-container {
+    width: 950px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 3rem;
 }
-header h1{
-    font-size: 8rem;
+header h1 {
+    font-size: 6rem;
     -webkit-text-stroke: 3px white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 2px 2px 20px black;
 }
-header img{
+header img:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 20px black;
+}
+header img {
     border: 3px solid white;
     border-radius: 30px;
     width: 200px;
     height: 200px;
 }
-header img:hover{
-    cursor: pointer;
-    box-shadow: 10px 10px 20px black;
-}
-.introductie{
+.introductie {
     width: 100%;
     display: flex;
     align-items: center;
@@ -58,29 +56,29 @@ header img:hover{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-.introductie-container{
-    width: 1200px;
+.introductie-container {
+    width: 950px;
     background-color: var(--secondbackground);
     border: 5px solid black;
     border-radius: 35px;
     padding: 1rem;
 }
-.introductie-container p{
+
+.introductie-container p {
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
     margin: 1rem;
     color: aliceblue;
 }
-
-.Talen-tabel{
+.Talen-tabel {
     width: 750px;
     background: var(--secondbackground);
     border-radius: 10px;
     overflow: hidden;
     border: 5px solid black;
 }
-.Talen-tabel-cointainer{
+.Talen-tabel-cointainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,7 +86,7 @@ header img:hover{
     margin-bottom: 2rem;
 }
 
-.Talen-tabel thead th{
+.Talen-tabel thead th {
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -97,87 +95,90 @@ header img:hover{
     text-align: left;
     font-size: 1.5rem;
 }
-.Talen-tabel tbody tr{
+.Talen-tabel tbody tr {
     display: grid;
     grid-template-columns: 1fr 200px;
     gap: 12px;
     padding: 14px 16px;
 }
-.Talen-tabel tbody tr:nth-child(odd){
+.Talen-tabel tbody tr:nth-child(odd) {
     background: var(--mainbackground);
 }
-.Talen-tabel tbody tr:nth-child(even){
+.Talen-tabel tbody tr:nth-child(even) {
     background: var(--secondbackground);
 }
-.Talen-tabel td{
+.Talen-tabel td {
     border: none;
 }
-.Talen-rij{
+.Talen-rij {
     display: flex;
     align-items: center;
-    gap:12px;
+    gap: 12px;
 }
-.Talen-flag{
+.Talen-flag {
     width: 36px;
     height: 24px;
     border-radius: 4px;
     background: white;
 }
-.Talen-naam{
+.Talen-naam {
     font-weight: 600;
     font-size: 1.5rem;
     color: aliceblue;
 }
-.Taal-kennis{
+.Taal-kennis {
     font-size: 1rem;
     color: black;
 }
-.Kennis-progressie{
+.Kennis-progressie {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-.progressie{
+.progressie {
     height: 10px;
     background: #e6eefb;
     border-radius: 999px;
     overflow: hidden;
 }
-.progressie span{
+.progressie span {
     display: block;
     height: 100%;
     background: linear-gradient(90deg, deepskyblue, darkblue);
     border-radius: 999px;
 }
-.progressie-label{
+.progressie-label {
     font-size: 1rem;
     color: black;
 }
-.prog-ned{
+.prog-ned {
     width: 100%;
 }
-.prog-eng{
+
+.prog-eng {
     width: 80%;
 }
-
-.werkervaring{
-    width: 1200px;
+.werkervaring {
+    width: 950px;
     margin: 0 auto;
 }
-.werkervaring h2{
+.werkervaring h2 {
     margin-bottom: 24px;
     border-bottom: 2px solid black;
     padding-bottom: 8px;
 }
-.werkervaring-container{
+.werkervaring-container {
     display: flex;
     gap: 16px;
     justify-content: center;
     align-items: center;
 }
-.ervaring{
+
+.ervaring {
     display: flex;
     gap: 10px;
+    height: 200px;
+    justify-content: center;
     flex-direction: column;
     background: var(--secondbackground);
     border-radius: 10px;
@@ -187,50 +188,59 @@ header img:hover{
     box-shadow: 0 2px 6px black;
     color: aliceblue;
 }
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.functie{
+
+.functie {
     margin: 0;
     font-size: 1.1rem;
 }
-.periode{
+
+.periode {
     font-size: 0.9rem;
 }
-.bedrijf{
+
+.bedrijf {
     font-weight: bold;
 }
-.beschrijving{
+
+.beschrijving {
     line-height: 1.5;
 }
-.diplomas-en-vaardigheden{
+
+.diplomas-en-vaardigheden {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1200px;
+    width: 950px;
     margin: 0 auto;
 }
 
-.diplomas{
+.diplomas {
     width: 600px;
     margin: 0 auto;
 }
-.diplomas h2{
+
+.diplomas h2 {
     margin-bottom: 24px;
     border-bottom: 2px solid black;
     padding-bottom: 8px;
 }
-.diplomas-container{
+
+.diplomas-container {
     display: flex;
     gap: 16px;
     justify-content: center;
     align-items: center;
 }
-.diplomas-en-opleidingen{
+
+.diplomas-en-opleidingen {
     display: flex;
-    height: 325px;
+    height: 200px;
     gap: 10px;
     flex-direction: column;
     justify-content: center;
@@ -242,22 +252,26 @@ header img:hover{
     box-shadow: 0 2px 6px black;
     color: aliceblue;
 }
-.vaardigheden-en-kennis{
+
+.vaardigheden-en-kennis {
     width: 600px;
     margin: 0 auto;
 }
-.vaardigheden-en-kennis h2{
+
+.vaardigheden-en-kennis h2 {
     margin-bottom: 24px;
     border-bottom: 2px solid black;
     padding-bottom: 8px;
 }
-.vaardigheden-en-kennis-container{
+
+.vaardigheden-en-kennis-container {
     display: flex;
     gap: 16px;
     justify-content: center;
     align-items: center;
 }
-.vaardigheden{
+
+.vaardigheden {
     display: flex;
     height: 325px;
     gap: 10px;
@@ -270,7 +284,8 @@ header img:hover{
     box-shadow: 0 2px 6px black;
     color: aliceblue;
 }
-.kennis{
+
+.kennis {
     display: flex;
     height: 325px;
     gap: 10px;
@@ -284,7 +299,8 @@ header img:hover{
     box-shadow: 0 2px 6px black;
     color: aliceblue;
 }
-footer{
+
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -295,18 +311,20 @@ footer{
     align-items: center;
     justify-content: center;
 }
-.footer-container{
-    width: 1200px;
+
+.footer-container {
+    width: 950px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 12px;
 }
-footer p{
+
+footer p {
     color: aliceblue;
     font-size: 1.25rem;
 }
-footer button{
+footer button {
     border: solid 3px black;
     border-radius: 15px;
     color: aliceblue;
@@ -319,4 +337,190 @@ footer button:hover{
     cursor: pointer;
     box-shadow: 10px 10px 20px black;
 }
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    .header-container {
+        width: 550px;
+    }
+    header h1 {
+        font-size: 4rem;
+    }
+    header img {
+        width: 200px;
+        height: 200px;
+    }
+    .introductie-container{
+        width: 550px;
+    }
+    .Talen-tabel {
+        width: 550px;
+    }
 
+    .Taal-kennis {
+        font-size: 1.5rem;
+    }
+    .progressie-label {
+        font-size: 1.25rem;
+    }
+    .werkervaring {
+        width: 550px;
+    }
+    .ervaring {
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .diplomas-en-vaardigheden {
+        width: 550px;
+    }
+    .diplomas {
+        width: 550px;
+    }
+    .diplomas-en-opleidingen {
+        height: 200px;
+    }
+    .vaardigheden-en-kennis {
+        width: 550px;
+    }
+    .vaardigheden {
+        height: 325px;
+    }
+    .kennis {
+        height: 325px;
+    }
+    .footer-container {
+        width: 500px;
+    }
+
+    footer p {
+        font-size: 1.25rem;
+    }
+
+    footer button {
+        font-size: 1.25rem;
+    }
+}
+@media screen and (max-width: 575px) {
+    header {
+        height: 200px;
+    }
+    .header-container {
+        width: 300px;
+    }
+    header h1 {
+        font-size: 3rem;
+        -webkit-text-stroke: 1px white;
+    }
+    header img {
+        width: 150px;
+        height: 150px;
+    }
+    .introductie-container{
+        width: 350px;
+    }
+    .introductie-container p {
+        font-size: 1rem;
+    }
+    table.Talen-tabel,
+    table.Talen-tabel thead,
+    table.Talen-tabel tbody,
+    table.Talen-tabel th,
+    table.Talen-tabel td,
+    table.Talen-tabel tr {
+        display: block;
+    }
+    .Talen-tabel {
+        width: 350px;
+        background: var(--secondbackground);
+        border-radius: 10px;
+        overflow: hidden;
+        border: 5px solid black;
+    }
+
+    .Talen-tabel thead{
+        display: none;
+    }
+    .Talen-tabel thead th{
+        display: none;
+    }
+
+    .Talen-tabel tbody tr {
+        padding: 10px;
+    }
+    .Talen-rij {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .Talen-flag {
+        display: none;
+    }
+    .Taal-kennis {
+        display: none;
+    }
+    .Kennis-progressie {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .progressie {
+        height: 10px;
+        background: #e6eefb;
+        border-radius: 999px;
+        overflow: hidden;
+    }
+    .progressie-label {
+        font-size: 1.5rem;
+    }
+    .werkervaring {
+        width: 450px;
+    }
+    .werkervaring-container {
+        gap: 6px;
+    }
+    .ervaring {
+        height: 275px;
+        align-items: center;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .diplomas-en-vaardigheden {
+        width: 450px;
+    }
+    .diplomas {
+        width: 350px;
+    }
+    .diplomas h2 {
+        margin-bottom: 24px;
+        border-bottom: 2px solid black;
+        padding-bottom: 8px;
+    }
+    .diplomas-en-opleidingen {
+        height: 200px;
+    }
+    .vaardigheden-en-kennis {
+        width: 350px;
+    }
+    .vaardigheden {
+        height: 425px;
+    }
+    .kennis {
+        height: 425px;
+    }
+    .footer-container {
+        width: 500px;
+    }
+
+    footer p {
+        color: aliceblue;
+        font-size: 1.25rem;
+    }
+
+    footer button {
+        font-size: 1.25rem;
+    }
+}
